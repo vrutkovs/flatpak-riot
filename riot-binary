@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /app/share/keeweb
+
+nohup grunt dev &
+sleep 5
+
+npm run-script electron

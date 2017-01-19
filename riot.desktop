@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Keeweb
+Icon=info.keeweb.App
+Exec=/app/bin/keeweb
+Categories=Game;
