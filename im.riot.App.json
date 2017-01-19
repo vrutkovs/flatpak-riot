@@ -45,10 +45,10 @@
                 {
                     "path": "riot-Makefile",
                     "type": "file",
-                    "dest-name": "Makefile"
+                    "dest-filename": "Makefile"
                 },
                 {
-                    "path": "binary-keeweb",
+                    "path": "riot-binary",
                     "type": "file"
                 },
                 {

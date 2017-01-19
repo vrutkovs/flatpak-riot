@@ -1,7 +1,4 @@
 #!/bin/bash
-cd /app/share/keeweb
+cd /app/share/riot
 
-nohup grunt dev &
-sleep 5
-
-npm run-script electron
+node_modules/.bin/electron .

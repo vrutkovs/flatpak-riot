@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Keeweb
-Icon=info.keeweb.App
-Exec=/app/bin/keeweb
+Name=Riot
+Icon=im.riot.App
+Exec=/app/bin/riot
 Categories=Game;
