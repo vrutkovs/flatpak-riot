@@ -3,4 +3,4 @@ Type=Application
 Name=Riot
 Icon=im.riot.App
 Exec=/app/bin/riot
-Categories=Game;
+Categories=Network;
