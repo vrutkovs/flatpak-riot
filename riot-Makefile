@@ -11,7 +11,8 @@ install:
 
 	mkdir -p /app/share/applications
 	mv riot.desktop /app/share/applications/im.riot.App.desktop
-	mkdir -p /app/share/icons/hicolor/256x256/apps
+	mkdir -p /app/share/icons/hicolor/96x96/apps
+	cp res/vector-icons/favicon-96x96.png /app/share/icons/hicolor/96x96/apps/im.riot.App.png
 
 	cp -r * /app/share/riot
 
