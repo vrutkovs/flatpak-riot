@@ -3,7 +3,7 @@
     "base": "io.atom.electron.BaseApp",
     "base-version": "master",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.4",
+    "runtime-version": "1.6",
     "sdk": "org.freedesktop.Sdk",
     "command": "riot",
     "tags": ["nightly"],
@@ -17,17 +17,6 @@
         "--socket=wayland"
     ],
     "modules": [
-        {
-            "name": "nodejs",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://nodejs.org/dist/v7.4.0/node-v7.4.0.tar.xz",
-                    "path": "node-v7.4.0.tar.xz",
-                    "sha256": "9f15b916f8677ec1615c46bdd6d2208ed1b24fad26384f9ac249f5b09d31c32b"
-                }
-            ]
-        },
         {
             "name": "riot",
             "no-autogen": true,
