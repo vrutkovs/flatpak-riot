@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /app/share/riot
 
-node_modules/.bin/electron .
+node_modules/.bin/electron . --ignore-certificate-errors

@@ -14,7 +14,10 @@
         "--share=network",
         "--socket=pulseaudio",
         "--socket=x11",
-        "--socket=wayland"
+        "--socket=wayland",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets",
+        "--filesystem=xdg-run/keyring"
     ],
     "modules": [
         {
