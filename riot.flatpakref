@@ -1,0 +1,8 @@
+[Flatpak Ref]
+Title=Unofficial Riot builds
+Name=im.riot.App
+Branch=master
+Url=https://vrutkovs.github.io/flatpak-riot/repo
+IsRuntime=False
+RuntimeRepo=https://flathub.org/repo/flathub.flatpakrepo
+Comment=Riot - Matrix client
