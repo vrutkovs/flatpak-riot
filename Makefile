@@ -1,4 +1,4 @@
-all: prepare-repo install-deps build update-repo
+all: prepare-repo install-deps build clean-cache update-repo
 
 prepare-repo:
 	[[ -d repo ]] || ostree init --mode=archive-z2 --repo=repo
@@ -14,6 +14,9 @@ build:
 	flatpak-builder --force-clean --ccache --require-changes --repo=repo \
 		--subject="Nightly build of Riot, `date`" \
 		${EXPORT_ARGS} app im.riot.App.json
+
+clean-cache:
+	rm -rf .flatpak-builder/build
 
 update-repo:
 	flatpak build-update-repo --prune --prune-depth=20 --generate-static-deltas repo
