@@ -8,12 +8,17 @@ services:
 
 cache:
   directories:
-    - .flatpak-builder
+    - .cache
 
 before_script:
   - git clone -b gh-pages https://github.com/$TRAVIS_REPO_SLUG export/ && cp -rf export/repo . || mkdir export
 
+before_cache:
+  - tar --xattrs --xattrs-include=* -cpf .cache/cache.tar .flatpak-builder/
+
 script:
+  - mkdir -p .cache
+  - "tar --xattrs --xattrs-include=* -xf .cache/cache.tar || true"
   - docker run --privileged -v ${PWD}:/source -i vrutkovs/flatpak:test make -C source/
 
 before_deploy:
