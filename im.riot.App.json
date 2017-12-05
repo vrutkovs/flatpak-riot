@@ -32,7 +32,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/vector-im/riot-web",
-                    "branch": "v0.13.2"
+                    "branch": "v0.13.3"
                 },
                 {
                     "path": "riot-Makefile",
