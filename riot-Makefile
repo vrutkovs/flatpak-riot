@@ -1,6 +1,6 @@
 all:
 	npm install
-	npm install electron
+	npm install electron@2.0.0-beta.7
 	npm run build
 	npm run install:electron
 
