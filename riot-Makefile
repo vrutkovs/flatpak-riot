@@ -1,8 +1,8 @@
 all:
-	npm install
-	npm install electron@2.0.0-beta.7
-	npm run build
-	npm run install:electron
+	/app/bin/yarn install
+	/app/bin/yarn add electron@2.0.0-beta.7
+	/app/bin/yarn run build
+	/app/bin/yarn run install:electron
 
 install:
 	mkdir -p /app/share/riot
